@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-  <body>
+  <div class="padding left">
     {% for j in category %}
       {% for i in item %}
         <p>Drink Information:</p>
@@ -14,5 +14,5 @@
         <br>
       {% endfor %}
     {% endfor %}
-  </body>
+  </div>
 {% endblock %}

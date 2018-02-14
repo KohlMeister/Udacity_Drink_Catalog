@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-  <body>
+  <div class="padding left">
     {% for j in category %}
       <p>Category Information:</p>
       {{ j.categoryDesc }}
@@ -21,5 +21,5 @@
     {% for j in category %}
     <a href='{{url_for('newItem', categoryId = j.categoryId)}}'>Add New Drink</a>
     {% endfor %}
-  </body>
+  </div>
 {% endblock %}

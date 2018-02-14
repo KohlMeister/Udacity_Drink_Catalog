@@ -1,0 +1,87 @@
+/* Styles for Drink Catalog */
+
+/* Basic */
+body,
+html {
+  height: 100%;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* classes */
+.left {
+  float: left;
+}
+.aside {
+  width: 10em;
+  text-align: right;
+}
+.padding {
+	padding: 10px;
+}
+.header {
+  border-style: solid;
+  border-width: 2px;
+  border-color: #210934;
+}
+.bold {
+  font-weight: bold;
+}
+.undie {
+  text-decoration: underline;
+}
+.rbord {
+  border-right: solid;
+  border-color: #2E2FE3;
+}
+.sizing {
+  width: 80%;
+  align-content: center;
+}
+body {
+  width: 900px;
+  align-content: center;
+}
+automarg {
+	margin: auto;
+}
+
+/* colors */
+.backcol1 {
+  background-color: #D4E0F7;
+}
+.backcol2 {
+  background-color: #1258DC;
+}
+.backcol3 {
+  background-color: #2E2FE3;
+}
+.backcol4 {
+  background-color: #700CBC;
+}
+.backcol5 {
+  background-color: #210934;
+}
+.textcol1 {
+  color: #D4E0F7;
+}
+.textcol2 {
+  color: #1258DC;
+}
+.textcol3 {
+  color: #2E2FE3;
+}
+.textcol4 {
+  color: #700CBC;
+}
+.textcol5 {
+  color: #210934;
+}

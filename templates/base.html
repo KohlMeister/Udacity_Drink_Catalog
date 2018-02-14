@@ -3,19 +3,23 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="{{ url_for('static', filename='styles/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style19/style.css') }}">
   <title>Drink Catalog</title>
 </head>
-<header>
-  <div class="header">
-    <h1>Drink Catalog</h1>
-  </div>
-  <aside class="header">
-    {% include "catagories.html" %}
-  </aside>
-</header>
-<main>
-  {% block content %}
-  {% endblock %}
-</main>
+<body class="backcol1 automarg">
+  <header>
+    <div class="bold header backcol2 padding">
+      <h1 class="textcol5">Drink Catalog</h1>
+    </div>
+  </header>
+  <main class="backcol1">
+    <div>
+      <aside class="aside left padding">
+        {% include "catagories.html" %}
+      </aside>
+      {% block content %}
+      {% endblock %}
+    </div>
+  </main>
+</body>
 </html>

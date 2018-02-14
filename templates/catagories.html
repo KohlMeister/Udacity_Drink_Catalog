@@ -1,14 +1,16 @@
-<p>Categories</p>
-{% for i in categories %}
-  <a href = '{{url_for('showCategory', categoryId = i.categoryId)}}'>{{ i.categoryDesc }}</a>
+<div class="rbord padding">
+  <p class="bold textcol4">Categories</p>
+  {% for i in categories %}
+    <a href = '{{url_for('showCategory', categoryId = i.categoryId)}}'>{{ i.categoryDesc }}</a>
+    <br>
+  {% endfor %}
   <br>
-{% endfor %}
-<br>
-<a href="/catalog/newCategory">Add New Category</a>
-<br>
-<a href="/catalog">Home</a><br>
-{%if 'username' not in session %}
-  <a href="{{url_for('showLogin')}}">Login</a>
-{% else %}
-  <a href="{{url_for('gdisconnect')}}">Logout</a>
-{% endif %}
+  <a href="/catalog/newCategory">Add New Category</a>
+  <br>
+  <a href="/catalog">Home</a><br>
+  {%if 'username' not in session %}
+    <a href="{{url_for('showLogin')}}">Login</a>
+  {% else %}
+    <a href="{{url_for('gdisconnect')}}">Logout</a>
+  {% endif %}
+</div>

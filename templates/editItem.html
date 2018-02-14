@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block content %}
-  <body>
+  <div class="padding left">
     <p>Edit Item:</p>
     <form action = '{{url_for('editItem', categoryId = i.categoryId, itemId = i.itemId)}}', method = 'post'>
       <p>Drink:</p>
@@ -9,5 +9,5 @@
       <input type='submit' value='Edit'>
     </form>
     <a href='{{url_for('showCategory', categoryId = i.categoryId)}}'>Cancel</a>
-  </body>
+  </div>
 {% endblock %}
